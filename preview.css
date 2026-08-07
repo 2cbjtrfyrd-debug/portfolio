@@ -1,0 +1,11 @@
+.site-preview{padding:0;background:#111;align-items:stretch;justify-content:stretch;position:relative;background-repeat:no-repeat;background-size:cover;background-position:center}
+.lacoon-image{background-image:url('assets/lacoon-preview.png')}
+.transgrad-image{background-image:url('assets/transgrad-preview.png')}
+.lumora-image{background-image:url('assets/lumora-preview.png')}
+.preview-label{position:absolute;top:18px;left:20px;z-index:2;color:#fff;font:10px var(--mono);text-shadow:0 1px 8px #000}
+.preview-shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.2),transparent 35%,rgba(0,0,0,.12));pointer-events:none}
+.hero-terminal{position:relative;overflow:hidden}
+.profile-photo{position:absolute;right:18px;top:52px;width:94px;z-index:2}
+.profile-photo img{display:block;width:94px;height:122px;object-fit:cover;object-position:center top;border:1px solid rgba(120,228,210,.55);filter:saturate(.82) contrast(1.04);box-shadow:0 0 0 5px rgba(8,13,20,.6),0 16px 35px rgba(0,0,0,.35)}
+.profile-photo span{display:block;margin-top:7px;color:var(--cyan);font:9px var(--mono);text-align:right;opacity:.8}
+@media(max-width:800px){.profile-photo{right:14px;top:49px;width:72px}.profile-photo img{width:72px;height:94px}.profile-photo span{font-size:8px}.hero-terminal pre{padding-right:100px}}

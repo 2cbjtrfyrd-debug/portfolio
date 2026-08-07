@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Портфолио 108ecooo — frontend-разработчика и digital-дизайнера.">
+  <title>qiz3e — Web Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="preview.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="grid-bg" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="На главную"><span class="accent">&lt;/&gt;</span> qiz3e</a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span></button>
+    <nav id="main-nav" class="main-nav" aria-label="Основная навигация">
+      <a href="#about">about</a>
+      <a href="#work">work</a>
+      <a href="#skills">skills</a>
+      <a href="#contact">contact</a>
+    </nav>
+    <a class="header-cta" href="#contact">let's talk <span>↗</span></a>
+  </header>
+
+  <main id="top">
+    <section class="hero section-wrap" aria-labelledby="hero-title">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><span class="prompt">&gt;</span> available for select projects <i></i></p>
+        <h1 id="hero-title">I build digital<br><em>experiences</em><span class="cursor">_</span></h1>
+        <p class="hero-intro">Привет, я <strong>qiz3e</strong> — web developer, который превращает идеи в быстрые, выразительные и понятные интерфейсы.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#work">смотреть работы <span>↓</span></a>
+          <a class="text-link" href="#about">узнать больше <span>↗</span></a>
+        </div>
+      </div>
+      <div class="hero-terminal reveal" aria-label="Терминал с информацией о разработчике">
+        <div class="profile-photo"><img src="assets/qiz3e-profile.png" alt="qiz3e — web developer" loading="lazy"><span>qiz3e.jpg</span></div>
+        <div class="terminal-bar"><span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span><span class="terminal-title">profile.js</span></div>
+        <pre><code><span class="muted">01</span> <span class="purple">const</span> developer = {
+<span class="muted">02</span>   name: <span class="green">'qiz3e'</span>,
+<span class="muted">03</span>   role: <span class="green">'Web Developer'</span>,
+<span class="muted">04</span>   location: <span class="green">'Earth / Remote'</span>,
+<span class="muted">05</span>   focus: [
+<span class="muted">06</span>     <span class="green">'frontend'</span>, <span class="green">'ui/ux'</span>,
+<span class="muted">07</span>     <span class="green">'creative code'</span>
+<span class="muted">08</span>   ],
+<span class="muted">09</span>   <span class="blue">status</span>: <span class="green">'open_to_work'</span>
+<span class="muted">10</span> };</code></pre>
+        <div class="terminal-status"><i></i> system ready <span>⌘ K</span></div>
+      </div>
+      <div class="scroll-note"><span></span> scroll to explore</div>
+    </section>
+
+    <section id="about" class="section-wrap about section-pad">
+      <div class="section-label reveal"><span>01</span> // about me</div>
+      <div class="about-layout">
+        <h2 class="reveal">Design with<br><em>intention.</em></h2>
+        <div class="about-text reveal"><p>Я создаю веб-продукты на пересечении дизайна и технологий. Каждый проект начинается с вопроса «зачем?» и заканчивается интерфейсом, которым приятно пользоваться.</p><p>В работе ценю ясную структуру, детали, которые работают на задачу, и код, который легко поддерживать.</p><div class="signature">/* make it useful. make it beautiful. */</div></div>
+      </div>
+    </section>
+
+    <section id="work" class="section-wrap section-pad work">
+      <div class="section-heading reveal"><div class="section-label"><span>02</span> // selected work</div><p>03 projects <span class="accent">↘</span></p></div>
+      <div class="project-grid">
+        <a class="project-card reveal" href="https://transgrad.vercel.app" target="_blank" rel="noreferrer"><div class="project-visual site-preview lacoon-image"><span class="preview-label">// lacoon</span><span class="preview-shade"></span></div><div class="project-meta"><div><span class="project-index">01 / 03</span><h3>Lacoon</h3><p>Digital presence for a new perspective.</p></div><span class="arrow">↗</span></div></a>
+        <a class="project-card reveal" href="https://108ecooo.github.io/transgrad-sites/" target="_blank" rel="noreferrer"><div class="project-visual site-preview transgrad-image"><span class="preview-label">&lt;transgrad /&gt;</span><span class="preview-shade"></span></div><div class="project-meta"><div><span class="project-index">02 / 03</span><h3>Transgrad Sites</h3><p>A digital home for creative spaces.</p></div><span class="arrow">↗</span></div></a>
+        <a class="project-card reveal" href="https://bromzee.vercel.app" target="_blank" rel="noreferrer"><div class="project-visual site-preview lumora-image"><span class="preview-label">/* lumora */</span><span class="preview-shade"></span></div><div class="project-meta"><div><span class="project-index">03 / 03</span><h3>Lumora</h3><p>Soft forms for a brighter everyday.</p></div><span class="arrow">↗</span></div></a>
+      </div>
+    </section>
+
+    <section id="skills" class="section-wrap section-pad skills"><div class="section-label reveal"><span>03</span> // toolkit</div><div class="skills-layout"><h2 class="reveal">Tools I use<br><em>to think.</em></h2><div class="skill-list reveal"><div><span>01</span><b>HTML</b><small>semantic structure</small></div><div><span>02</span><b>CSS / SCSS</b><small>systems & motion</small></div><div><span>03</span><b>JavaScript</b><small>interaction & logic</small></div><div><span>04</span><b>WordPress</b><small>sites & content</small></div><div><span>05</span><b>Tilda</b><small>no-code development</small></div><div><span>06</span><b>Яндекс Директ</b><small>ads & growth</small></div><div><span>07</span><b>UI / UX</b><small>clarity first</small></div><div><span>08</span><b>Figma</b><small>ideas to interface</small></div></div></div></section>
+
+    <section id="contact" class="contact section-wrap section-pad reveal"><p class="eyebrow"><span class="prompt">&gt;</span> next chapter</p><h2>Have an idea?<br><em>Let's make it real.</em></h2><a class="button button-primary" href="https://t.me/qiz3e" target="_blank" rel="noreferrer">написать в Telegram <span>↗</span></a></section>
+  </main>
+  <footer class="site-footer section-wrap"><span>© 2026 qiz3e</span><span class="footer-comment">/* crafted with curiosity & caffeine */</span><div><a href="mailto:hello@qiz3e.dev">email</a><a href="https://github.com/qiz3e" target="_blank" rel="noreferrer">github ↗</a></div></footer>
+</body>
+</html>
